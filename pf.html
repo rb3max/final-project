@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notie</title>
+  <link rel="stylesheet" type="text/css" href="pf.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+</head>
+</head>
+<body>
+  <div class="modal">
+    <div class="box_modal">
+      <button class="close_modal">X</button>
+    <h1 class="sentence">Your Score is:</h1>
+    <h2 class="final_score"></h2>
+    <h2 class="greeting">Congrats</h2>
+
+  </div>
+  </div>
+  <!--navbar-->
+  <nav>
+    <img src="https://www.noti.pl/assets/img/img-logo.svg" alt="">
+    <ul class="jadwal">
+      <li>Home</li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#footer">Contact us</a></li>
+    </ul>
+  </nav>
+  <!--endnavbar-->
+
+
+
+  <!--section1-->
+  <div class="section1">
+    <i class="fas fa-school fa-lg"></i>
+    <h1>CALCULER MOYENNE  BAC SCIENTIFIQUE </h1>
+    <h3>chosir votre section</h3>
+  </div>
+  <!--end section1-->
+
+
+  <!--section2-->
+  <div class="section2">
+    <div class="card" id="Math" >
+      <h3>Section Mathematique</h3>
+      <i class="fas fa-square-root-alt fa-lg"></i>
+      <div class="matier">
+        <label for="math">Math</label>
+        <input type="number" id="math" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="science">Science</label>
+        <input type="number" id="science" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="physique">Physique</label>
+        <input type="number" id="physique" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="arabic">Arabic</label>
+        <input type="number" id="arabic" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="informatique">Informatique</label>
+        <input type="number" id="informatique" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="francais">Français</label>
+        <input type="number" id="francais" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="english">English</label>
+        <input type="number" id="english" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="options">Option</label>
+        <input type="number" id="options" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="sport">Sport</label>
+        <input type="number" id="sport" min="0" max="20" step="any" required>
+    </div>
+    <div class="matier">
+        <label for="philo">Philo</label>
+        <input type="number" id="philo" min="0" max="20" step="any" required>
+    </div>
+    <button type="button" onclick="calculateScore()" class="open_modal">Calculer</button>
+
+      
+      
+    </div>
+    <div class="card" id="Science">
+      <h3>Section Science</h3>
+      <i class="fa-solid fa-virus-covid fa-lg"></i>
+      <div class="matier">
+        <label for="">Math</label>
+        <input type="number" id="math1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Sience</label>
+        <input type="number" id="science1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Physique</label>
+        <input type="number" id="physique1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Informatique</label>
+        <input type="number" id="informatique1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Arabic</label>
+        <input type="number" id="arabic1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Français</label>
+        <input type="number" id="français1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">English</label>
+        <input type="number" id="english1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Option</label>
+        <input type="number" id="option1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Sport</label>
+        <input type="number" id="sport1" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Philo</label>
+        <input type="number" id="philo1" min="0" max="20" step="any" required="">
+      </div>
+      <button type="button" onclick="calculateScore1()" class="open_modal">Calculer</button>
+      
+    </div>
+    <div class="card" id="technique">
+      <h3>Section technique</h3>
+      <i class="fas fa-cogs fa-lg"></i>
+      <div class="matier">
+        <label for="">Math</label>
+        <input type="number" id="math2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">technique</label>
+        <input type="number" id="technique2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Physique</label>
+        <input type="number" id="physique2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Informatique</label>
+        <input type="number" id="informatique2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Arabic</label>
+        <input type="number" id="arabic2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Français</label>
+        <input type="number" id="français2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">English</label>
+        <input type="number" id="english2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">option</label>
+        <input type="number" id="option2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Sport</label>
+        <input type="number" id="sport2" min="0" max="20" step="any" required="">
+      </div>
+      <div class="matier">
+        <label for="">Philo</label>
+        <input type="number" id="philo2" min="0" max="20" step="any" required="">
+      </div>
+      <button type="button" onclick="calculateScore2()" class="open_modal">Calculer</button>
+
+      
+      
+    </div>
+   
+
+  </div>
+  <!--end section2-->
+  <!--section3-->
+  
+   <div class="section3" id="about">
+    <div class="about">
+      <img src="https://www.noti.pl/assets/img/img-logo.svg" alt=""> 
+      <h1>About us</h1>
+      <p>Welcome to my web page! As a new student at GoMyCode, I am thrilled to present my final project—a BAC score calculator. This project represents the culmination of my hard work and showcases my skills in programming and problem-solving. With a keen focus on user experience, I have crafted an application that seamlessly calculates and displays BAC scores.</p>
+
+
+    </div>
+    
+      
+
+   </div>
+   <footer>
+    <div id="footer">
+    <div class="row">
+       <a href="https://www.facebook.com/rayen.beltaief.5"><i class="fa-brands fa-facebook fa-2xs"></i></a>
+       <a href="https://www.instagram.com/rayenbeltaief/"><i class="fa-brands fa-instagram fa-2xs"></i></a>
+       <a href="https://github.com/rb3max"><i class="fa-brands fa-github fa-2xs"></i></a>
+       <a href="#"><i class="fa-brands fa-twitter fa-2xs"></i></a>
+    </div>
+    
+    <div class="row">
+    <ul>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    
+    <div class="row">
+    GoMyCode Copyright © 2021 Inferno - All rights reserved 
+    </div>
+    </div>
+    </footer>
+    <script src="pf.js"></script>
+</body>
+</html>

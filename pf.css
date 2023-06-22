@@ -1,0 +1,344 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  margin: 0;
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  background-image: url(wave-haikei\ -\ copie\ \(2\).png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+}
+
+
+/*navbar*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  border-radius: 20px;
+  
+}
+nav img{
+  width: 300px ;
+  height: 60px;
+  padding-top: 5px;
+  margin-left: -100px;
+  
+}
+.jadwal{
+  display: flex;
+  gap: 80px; 
+  list-style: none;
+  cursor: pointer; 
+  color: #ababab;
+  font-size: .9375rem;
+  font-weight: 700;
+  line-height: 2em; 
+  font-family: 'Dancing Script', cursive; 
+}
+.jadwal li a{
+  text-decoration: none;
+  color: #ababab;
+  font-size: .9375rem;
+  font-weight: 700;
+  
+}
+.jadwal li a:hover{
+  color: #000000;
+}
+li:hover{
+  color: #000000;
+}
+/*navbar*/
+
+
+/*first section*/
+.section1{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.section1 h1{
+  font-family: 'Dancing Script', cursive;
+  
+}
+.section1 h3{
+  font-family: 'Dancing Script', cursive;
+  text-decoration: underline;
+
+}
+/*end first section*/
+
+
+/*second section*/
+.section2{
+  display: flex;
+  gap: 40px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-left: 70px;
+  
+}
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: rgb(161,175,168);
+  background: linear-gradient(90deg, rgba(161,175,168,1) 0%, rgba(117,126,128,1) 47%, rgba(94,92,85,1) 100%);
+  border-radius: 20px;
+  height: 420px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+  
+  
+}
+.card h3{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.card i {
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.matier {
+  display: flex;
+  align-items: center;
+  
+  margin-left: 10px;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.matier label {
+  flex: 1;
+  font-family: 'Dancing Script', cursive;
+}
+
+.matier input {
+  width: 30%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  
+}
+input[type="number"] {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.card button{
+  width: 20%;
+  margin: 0 auto;
+  
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-right: 100px; 
+  transition: transform 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+.card button:hover{
+  color: #000000;
+  transform: scale(1.1);
+  
+}
+
+/*end section2*/
+
+
+
+
+
+
+/*section3*/
+
+
+.section3 {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px; 
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  background: rgb(161,175,168);
+  background: linear-gradient(90deg, rgba(161,175,168,1) 0%, rgba(117,126,128,1) 47%, rgba(94,92,85,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 200px;
+  height: 700px;
+  border-radius: 50px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.section3 img {
+  width: 202px;
+  height: 201px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  
+}
+
+.section3 h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+.section3 p {
+  color: #000000;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 30px;
+  padding-bottom: 50px; 
+  line-height: 32px;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+}
+
+/*end section3*/
+
+/*footer*/
+#footer{
+ 
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  margin-top: 200px;
+  width: 100%;
+  margin-left: 2px;
+  }
+  
+  #footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:rgb(0, 0, 0);
+  font-size:0.8em;
+  font-family: 'Dancing Script', cursive;
+  }
+  
+  #footer .row a{
+  text-decoration:none;
+  color:rgb(0, 0, 0);
+  
+  transition: transform 0.3s;
+  }
+  
+  #footer .row a:hover{
+  color:#ffffff;
+ 
+  transform: scale(1.1) !important;
+  }
+  
+  #footer .row ul{
+  width:92%;
+  }
+  
+  #footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  #footer .row a i{
+  font-size:2em;
+  margin: 1%;
+  }
+  
+  
+
+/*end footer*/
+
+
+
+
+
+  
+/* modal */
+.modal{
+  width: 100%;
+  height: 100%;
+  background-color: #0000006f;
+  position: fixed;
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.box_modal{
+  background: rgb(161,175,168);
+  background: linear-gradient(90deg, rgb(222, 224, 223) 0%, rgb(188, 194, 195)47%, rgb(161, 159, 155) 100%);
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.8);
+  width: 40%;
+  padding: 15px 20px;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.close_modal{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #757575;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+.close_modal:hover{
+  color: #ffffff;
+  transform: scale(1.1);
+  
+}
+.greeting{
+  font-size: 70px;
+  margin: 0;
+  
+}
+/* end modal */
+
+
+
+

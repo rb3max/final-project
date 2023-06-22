@@ -1,0 +1,64 @@
+body {
+    background-color: #c9c7c7;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2b3e51;
+}
+.login{
+    background-color: #ffffff;
+  width: 35%;
+  margin: 80px auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border-radius: 4px;
+  box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+}
+h2{
+    font-weight: 300;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+input{
+    width: 340px;
+    height: 60px;
+    border-radius: 4px;
+    color: #8a8b8e;
+    border: 1px solid #c2c0ca;
+    outline-color: rgb(253, 213, 152);
+}
+input::placeholder{
+    color: #8a8b8e;
+    
+    font-style: normal;
+    font-size: 16px;
+}
+#login{
+    border: none;
+    background-color: #3ca9e2;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+#login:hover{
+    background-color: #2d94cc;
+}
+input[type="text"], input[type="email"] {
+    
+    padding: 0 0 0 10px;
+    color: #8a8b8e;
+    font-size: 16px;
+    
+   
+}
+
